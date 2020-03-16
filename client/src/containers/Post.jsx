@@ -2,6 +2,7 @@ import React from "react";
 import { gql } from "apollo-boost";
 import { useQuery } from "@apollo/react-hooks";
 import { AddPost } from "./AddPost";
+import { UpdatePost } from "./UpdatePost";
 
 export const GET_POSTS = gql`
     query getPosts {
@@ -28,6 +29,7 @@ export const Post = () => {
                 </main>
             ))}
             <AddPost />
+            <UpdatePost />
         </React.Fragment>
     );
 };
